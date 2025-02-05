@@ -236,7 +236,7 @@ void DataInit() {
 	uint32_t initialized = *(__IO uint32_t *)(0x08020008);
 	if (initialized != 1) {
 		LEDWrite(255, 0, 0);
-		ticks_per_m = 150.4;
+		ticks_per_m = 146.1;
 		dist = 7.0f;
 		accel_dist = 0.5;
 		decel_dist = 1.5;

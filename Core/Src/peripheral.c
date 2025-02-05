@@ -10,9 +10,9 @@
 
 
 void LEDWrite(int r, int g, int b) {
-	htim1.Instance->CCR1 = b;
-	htim1.Instance->CCR2 = r;
-	htim1.Instance->CCR3 = g;
+	htim1.Instance->CCR1 = 255-b;
+	htim1.Instance->CCR2 = 255-r;
+	htim1.Instance->CCR3 = 255-g;
 }
 void Error(char* err) {
 	while (1) {
